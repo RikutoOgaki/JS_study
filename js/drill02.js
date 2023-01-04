@@ -18,17 +18,14 @@ drill02 - 配列
 
 // console.log(`[${array[1]}]`);
 
-let arr = [];
+let array = [];
+console.log(array);
 
-console.log(arr);
-arr.push(200);
+array.push(200);
+console.log(array);
 
-console.log(arr);
-arr.push(300);
+array.push(300);
+console.log(array);
 
-console.log(arr);
-arr.shift(200);
-
-console.log(arr);
-
-
+array.shift(200);
+console.log(array);
