@@ -17,10 +17,10 @@ e/5 には ○
 ● ○
 */
 
-
-const tab = document.getElementById("reversi");
+const tab = document.getElementById("tab");
 console.log(tab);
 let tbody = document.createElement("tbody");
+console.log(tbody);
 tab.appendChild(tbody);
 for(let i=1; i<9; i++){
     let tr = document.createElement("tr");
@@ -29,17 +29,16 @@ for(let i=1; i<9; i++){
         let td = document.createElement("td");
         tr.appendChild(td);
         if(i===4&&j===4){
-            td.textContent = "●";
-        }
-        else if(i===5&&j===5){
-            td.textContent = "●";
-        }
-        else if(i===5&&j===4){
-            td.textContent = "○";
+            td.innerText = "○";
         }
         else if(i===4&&j===5){
-            td.textContent = "○";
+            td.innerText = "●";
+        }
+        else if(i===5&&j===4){
+            td.innerText = "●";
+        }
+        else if(i===5&&j===5){
+            td.innerText = "○";
         }
     }
 }
-
